@@ -1,13 +1,13 @@
-#Company Question
+# Company Question
 
-##Requirements
+## Requirements
 JDK11
 Ensure JDK11 bin is in path
 
 ## Execution 
 mvn install
 
-java -jar company-question-0.0.1-SNAPSHOT.jar <file-name>
+java -jar company-question-0.0.1-SNAPSHOT.jar {file-name}
 
 ### Sample Input File
 ```input
