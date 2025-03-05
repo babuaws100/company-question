@@ -12,9 +12,18 @@ public class CompanyProblem {
 
 	public static void main(String[] args) throws IOException {
 
+		// Check if a filename is provided
+		if (args.length == 0) {
+			System.err.println("Error: No filename provided.");
+			System.err.println("Usage: java -jar your-jar-file.jar <filename>");
+			System.exit(1); // Exit with a non-zero status to indicate an error
+		}
+
+		// Get the filename from arguments
+		String filename = args[0];
+
 		// Read the CSV file
-		Tree<Employee> employeeTree = readFromCSV("employee.csv");
-		System.out.println(employeeTree);
+		Tree<Employee> employeeTree = readFromCSV(filename);
 
 		// Find the employees earning less
 		Map<Employee,  Integer> employeeIdealSalaryMap = new LinkedHashMap<>();

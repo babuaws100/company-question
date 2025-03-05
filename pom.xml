@@ -17,7 +17,7 @@
 				<configuration>
 					<archive>
 						<manifest>
-							<mainClass>com.test.question.CompanyQuestion</mainClass>
+							<mainClass>com.test.question.CompanyProblem</mainClass>
 						</manifest>
 					</archive>
 				</configuration>
